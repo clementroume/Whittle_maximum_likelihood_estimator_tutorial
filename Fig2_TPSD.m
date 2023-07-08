@@ -38,14 +38,15 @@ plot(w,Tpchofgn)
 plot(w,Tpchoarf)
 hold off
 title('\bf choleskyfgn','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$', '$T^{\prime}(\omega;0.8000)_{fGn}$','$T^{\prime}(\omega;0.3239)_{ARFIMA}$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j})$', '$T^{\prime}(\omega_{j};0.8000)_{fGn}$','$T^{\prime}(\omega_{j};0.3239)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
 
 nexttile(2)
 hold on
@@ -53,14 +54,15 @@ plot(w,Tparffgn)
 plot(w,Tparfarf)
 hold off
 title('\bf arfima0d0','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$', '$T^{\prime}(\omega;0.7804)_{fGn}$','$T^{\prime}(\omega;0.3089)_{ARFIMA}$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j})$', '$T^{\prime}(\omega_{j};0.7804)_{fGn}$','$T^{\prime}(\omega_{j};0.3089)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
 
 
 nexttile(3)
@@ -69,14 +71,15 @@ plot(w,Tpwhifgn)
 plot(w,Tpwhiarf)
 hold off
 title('\bf whitenoise','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$', '$T^{\prime}(\omega;0.5093)_{fGn}$','$T^{\prime}(\omega;0.0096)_{ARFIMA}$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j}$', '$T^{\prime}(\omega_{j};0.5093)_{fGn}$','$T^{\prime}(\omega_{j};0.0096)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
 
 nexttile(4)
 hold on
@@ -84,12 +87,14 @@ plot(w,Tpempfgn)
 plot(w,Tpemparf)
 hold off
 title('\bf empirical','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$', '$T^{\prime}(\omega;0.7457)_{fGn}$','$T^{\prime}(\omega;0.2805)_{ARFIMA}$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j})$', '$T^{\prime}(\omega_{j};0.7457)_{fGn}$','$T^{\prime}(\omega_{j};0.2805)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
+
 clear ax

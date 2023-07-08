@@ -96,6 +96,7 @@ ylim([min(lwHchoarf) max(lwHchoarf)]);
 legend('$\ell_{w}(H)_{fGn}$','$\ell_{w}(H)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
+axis square
 
 nexttile
 plot(H,lwHarffgn)
@@ -110,6 +111,7 @@ ylim([min(lwHarfarf) max(lwHarfarf)]);
 legend('$\ell_{w}(H)_{fGn}$','$\ell_{w}(H)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
+axis square
 
 nexttile
 plot(H,lwHwhifgn)
@@ -124,6 +126,7 @@ ylim([min(lwHwhiarf) max(lwHwhiarf)]);
 legend('$\ell_{w}(H)_{fGn}$','$\ell_{w}(H)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
+axis square
 
 nexttile
 plot(H,lwHempfgn)
@@ -138,5 +141,6 @@ ylim([min(lwHemparf) max(lwHemparf)]);
 legend('$\ell_{w}(H)_{fGn}$','$\ell_{w}(H)_{ARFIMA}$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
+axis square
 
 clear ax

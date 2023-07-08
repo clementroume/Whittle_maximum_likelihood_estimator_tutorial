@@ -14,20 +14,26 @@ nexttile
 plot(wl,zscore(pppl),'LineWidth',0.2)
 ylim([-6.5 4])
 xlim([wl(1) wl(1022)])
-title('Persitant behavior','Interpreter','latex')
+xlabel('\boldmath$\log(\omega_{j})$','Interpreter','latex')
+ylabel('\boldmath$\log(P(\omega_{j}))$','Interpreter','latex')
+title('Persitent behavior','Interpreter','latex')
 set(gca,'TickLabelInterpreter','latex')
 
 nexttile
 plot(wl,zscore(pmml),'LineWidth',0.2)
 ylim([-6.5 4])
 xlim([wl(1) wl(1022)])
-title('Antiersitant behavior','Interpreter','latex')
+xlabel('\boldmath$\log(\omega_{j})$','Interpreter','latex')
+ylabel('\boldmath$\log(P(\omega_{j}))$','Interpreter','latex')
+title('Anti-persitent behavior','Interpreter','latex')
 set(gca,'TickLabelInterpreter','latex')
 
 nexttile
 plot(wl,zscore(pmpl),'LineWidth',0.2)
 ylim([-6.5 4])
 xlim([wl(1) wl(1022)])
+xlabel('\boldmath$\log(\omega_{j})$','Interpreter','latex')
+ylabel('\boldmath$\log(P(\omega_{j}))$','Interpreter','latex')
 title('Mixed behavior',Interpreter='latex')
 set(gca,'TickLabelInterpreter','latex')
 
@@ -35,5 +41,7 @@ nexttile
 plot(wl,zscore(partificial),'LineWidth',0.2)
 ylim([-6.5 4])
 xlim([wl(1) wl(1022)])
+xlabel('\boldmath$\log(\omega_{j})$','Interpreter','latex')
+ylabel('\boldmath$\log(P(\omega_{j}))$','Interpreter','latex')
 title('ARFIMA$(2,-0.35,1)$','Interpreter','latex')
 set(gca,'TickLabelInterpreter','latex')

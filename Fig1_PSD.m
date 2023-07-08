@@ -33,49 +33,53 @@ tiledlayout(2,2)
 nexttile
 plot(w,Pcho)
 title('\bf choleskyfgn','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j})$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
 
 nexttile
 plot(w,Parf)
 title('\bf arfima0d0','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j})$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
 
 nexttile
 plot(w,Pwhi)
 title('\bf whitenoise','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j})$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
 
 nexttile
 plot(w,Pemp)
 title('\bf empirical','Interpreter','latex')
-xlabel('\boldmath$\omega$','Interpreter','latex')
-ylabel('\boldmath$P(\omega)$','Interpreter','latex')
-legend('$P(\omega)$','Interpreter','latex')
+xlabel('\boldmath$\omega_{j}$','Interpreter','latex')
+ylabel('\boldmath$P(\omega_{j})$','Interpreter','latex')
+legend('$P(\omega_{j})$','Interpreter','latex')
 ax = gca;
 ax.TickLabelInterpreter = 'latex';
 xlim([0 pi]);
-xticks([w(1) pi/4 pi/2 3*pi/4 w(511)])
-xticklabels({'$2\pi/N$','$\pi/4$','$\pi/2$','$3\pi/4$','$2\pi m/N$'})
+xticks([0 pi/4 pi/2 3*pi/4 pi])
+xticklabels({'$0$','$\pi/4$','$\pi/2$','$3\pi/4$','$\pi$'})
+axis square
 
 clear ax

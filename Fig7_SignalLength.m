@@ -51,6 +51,7 @@ plot(mean(mse32),...
     'LineStyle','none', 'Marker', 'diamond', 'MarkerEdgeColor', [0.8500 0.3250 0.0980], 'MarkerSize',4)
 legend('RMSE','Interpreter','latex','Location','northwest')
 hold off
+axis square
 
 nexttile
 boxplot(mse64,Alpha,...
@@ -69,6 +70,7 @@ plot(mean(mse64),...
     'LineStyle','none', 'Marker', 'diamond', 'MarkerEdgeColor', [0.8500 0.3250 0.0980], 'MarkerSize',4)
 legend('RMSE','Interpreter','latex','Location','northwest')
 hold off
+axis square
 
 nexttile
 boxplot(mse128,Alpha,...
@@ -87,6 +89,7 @@ plot(mean(mse128),...
     'LineStyle','none', 'Marker', 'diamond', 'MarkerEdgeColor', [0.8500 0.3250 0.0980], 'MarkerSize',4)
 legend('RMSE','Interpreter','latex','Location','northwest')
 hold off
+axis square
 
 nexttile
 boxplot(mse256,Alpha,...
@@ -105,6 +108,7 @@ plot(mean(mse256),...
     'LineStyle','none', 'Marker', 'diamond', 'MarkerEdgeColor', [0.8500 0.3250 0.0980], 'MarkerSize',4)
 legend('RMSE','Interpreter','latex','Location','northwest')
 hold off
+axis square
 
 lines = findobj(gcf, 'type', 'line', 'Tag', 'Median');set(lines, 'Color', 'k','linewidth',0.5);
 

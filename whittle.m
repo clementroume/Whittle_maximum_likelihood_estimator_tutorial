@@ -34,7 +34,6 @@ Tp=sin(pi*H)*gamma((2*H)+1)*(abs(w).^(1-(2*H)));
 c=sum(P)/sum(Tp);
 T=c*Tp ;
 lwHfgn=(2/N)*sum(log(T)+(P./T));
-
 %% Matlab code 7: Whittle log-likelihood Matlab function with ARFIMA(0,d,0) theoretical PSD
 function lwHarf = WLLFarf(H,w,P,N)
 d=H-0.5;
@@ -42,4 +41,3 @@ Tp=(1/(2*pi))*(2*sin(w/2)).^-(2*d);
 c=sum(P)/sum(Tp);
 T=c*Tp ;
 lwHarf=(2/N)*sum(log(T)+(P./T));
-
