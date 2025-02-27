@@ -4,6 +4,9 @@ This repository contains MATLAB code and sample data used in the publication:
 [A guide to Whittle maximum likelihood estimator in MATLAB](https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2023.1204757/full)  
 *Frontiers in Network Physiology*. The tutorial demonstrates the implementation and application of Whittle’s maximum likelihood estimator for estimating fractal exponents in time series, along with related analyses such as periodogram estimation, detrended fluctuation analysis, and error assessment.
 
+<img width="517" alt="Screenshot 2025-02-27 at 14 44 49" src="https://github.com/user-attachments/assets/85269496-a31a-4c79-a303-9137ceb1efb6" />
+
+
 ---
 
 ## Repository Overview
